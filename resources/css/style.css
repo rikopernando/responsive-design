@@ -7,18 +7,21 @@
 /* BASIC SETUP */
 /* --------------------------------- */
 
-* { margin: 0;
+* {
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color; #fff;
     color: #555;
     font-family: 'Lato', 'Arial', 'sans-serif';
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {zoom: 1}
@@ -126,6 +129,7 @@ a:visited {
     text-decoration: none;
     padding-bottom: 1px;
     border-bottom: 1px solid #e67e22;
+    -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -144,6 +148,7 @@ input[type=submit] {
     font-weight: 300;
     text-decoration: none;/* garis bawah */
     border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s; /* waktu perubahan pada property CSS*/
     transition: background-color 0.2s, border 0.2s, color 0.2s; /* waktu perubahan pada property CSS*/
 }
 
@@ -189,6 +194,7 @@ header {
     /*
      * Linear gradient membuat supaya gambar tampak lebih gelap(COba aja sendiri)
      * */
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/hero.jpg');
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/hero.jpg');
     background-size: cover;/* agar lebar gambar menyesuaikan dengan ukuran layar, atau gambar tampil secara penuh */
     background-position: center;
@@ -201,6 +207,10 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
+    /* for Google chrom, IOS, androis & Safari */
+    -webkit-transform: translate(-50%, -50%); /* menggeser sebuah element */
+    /* for Internet Explorer */
+    -ms-transform: translate(-50%, -50%); /* menggeser sebuah element */
     transform: translate(-50%, -50%); /* menggeser sebuah element */
 }
 
@@ -230,6 +240,7 @@ header {
     text-transform: uppercase;
     font-size: 90%;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -285,12 +296,17 @@ header {
     opacity: 0.7; /* membuat element menjadi tranparant*/
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.15);/* zoom , atau membuat gambar lebih besar*/
+    -ms-transform: scale(1.15);/* zoom , atau membuat gambar lebih besar*/
     transform: scale(1.15);/* zoom , atau membuat gambar lebih besar*/
+    -webkit-transition: transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s;
 }
 
 .meal-photo img:hover {
     opacity: 1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
 
@@ -369,6 +385,7 @@ header {
 /* --------------------------------- */
 
 .section-testimonials {
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)), url('img/back-customers.jpg');
     background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)), url('img/back-customers.jpg');
     background-size: cover;
     background-attachment: fixed;
@@ -540,6 +557,7 @@ footer {
     text-decoration: none;
     border: 0;
     color: #888;
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
@@ -556,6 +574,7 @@ footer {
 .ion-social-twitter:hover,
 .ion-social-googleplus:hover,
 .ion-social-instagram:hover {
+    -webkit-transition: color 0.2s;
     transition: color 0.2s;
 }
 
