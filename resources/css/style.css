@@ -194,8 +194,8 @@ header {
     /*
      * Linear gradient membuat supaya gambar tampak lebih gelap(COba aja sendiri)
      * */
-    background-image: -webkit-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/hero.jpg');
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/hero.jpg');
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/hero-min.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url('img/hero-min.jpg');
     background-size: cover;/* agar lebar gambar menyesuaikan dengan ukuran layar, atau gambar tampil secara penuh */
     background-position: center;
     background-attachment: fixed;
@@ -437,8 +437,8 @@ header {
 /* --------------------------------- */
 
 .section-testimonials {
-    background-image: -webkit-linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)), url('img/back-customers.jpg');
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)), url('img/back-customers.jpg');
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)), url('img/back-customers-min.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)), url('img/back-customers-min.jpg');
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
